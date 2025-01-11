@@ -1,0 +1,98 @@
+body{
+  /* background: linear-gradient(to right, rgb(12, 12, 14),rgb(24, 27, 34)); */
+  background: linear-gradient(-45deg,rgb(78, 64, 182),rgb(96, 131, 230),rgb(219, 66, 66),rgb(76, 255, 255));
+  padding: 0;
+  margin: 0;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  margin: 10% auto;
+  background:linear-gradient(to right,rgb(4, 29, 41),rgb(39, 9, 9));
+  /* border: 1px solid linear-gradient(to right,red,yellow ); */
+  border-radius: 40px;
+  box-shadow: 0px 0px 15px -5px rgba(9, 9, 9, 0.788);
+}
+
+.game{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.icons{
+  width: 500px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  font-variant:small-caps;
+  color: azure;
+  font-family:'Trebuchet MS', sans-serif;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(0, 0, 111);
+}
+
+/* .buttons{
+  margin:10% auto ;
+} */
+button{
+  width: 100px;
+  height:50px;
+  margin: auto 40px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  background-color: black;
+border: none;
+border-radius: 10px;
+color: aliceblue;
+font-size: 17px;
+font-weight: 500;
+font-family: Verdana, sans-serif;
+}
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px 0px rgba(248, 248, 248, 0.199);
+  transition: all 0.3s ease;
+  
+}
+.scorecard{
+  width: 100%;
+  display: flex;
+  color: aliceblue;
+  align-items:center;
+  justify-content: center;
+}
+
+.score{
+  display: flex;
+  flex-direction: row;
+  column-gap: 60px;
+  margin-bottom: 30px;
+  color: aliceblue;
+ font-size: medium;
+}
